@@ -1,0 +1,24 @@
+{
+  "name": "hacker-news-mobile-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node boot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Friend <james@jsdf.co> (http://jsdf.co/)",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^4.6.3",
+    "cors": "^2.5.3",
+    "express": "^4.12.1",
+    "firebase": "^2.2.1",
+    "http2": "^3.2.0",
+    "leveldown": "^0.10.4",
+    "levelup": "^0.19.0",
+    "standard-error": "^1.1.0",
+    "underscore": "^1.8.2",
+    "url-join": "0.0.1"
+  }
+}
