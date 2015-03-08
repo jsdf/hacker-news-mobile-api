@@ -6,6 +6,8 @@ var cors = require('cors')
 
 var Store = require('./store')
 
+var config = require('./config.json')
+
 var app = express()
 app.use(cors())
 
@@ -24,7 +26,8 @@ app.get('/item/:id', function (req, res) {
   })
 })
 
-var server = app.listen(process.env.PORT || 3030, () => {
+const LISTEN_PORT = process.env.PORT || config.port || 3030
+var server = app.listen(LISTEN_PORT, () => {
   var host = server.address().address
   var port = server.address().port
   console.log('listening at http://%s:%s', host, port)
@@ -37,5 +40,5 @@ var server = app.listen(process.env.PORT || 3030, () => {
 
 // var server = http2.createServer(http2Opts, app)
 // server.listen(3030, function () {
-//   console.log('Example app listening')
+//   console.log('app listening on '+LISTEN_PORT)
 // })

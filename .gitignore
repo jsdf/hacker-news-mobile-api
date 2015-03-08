@@ -38,6 +38,4 @@ node_modules
 bower_components
 
 db/
-lib/
-assets/build
 config.json
