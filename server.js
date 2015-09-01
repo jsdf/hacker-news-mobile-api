@@ -10,6 +10,7 @@ var Store = require('./store')
 var config = require('./config.json')
 
 var app = express()
+app.set('trust proxy', 'loopback')
 app.use(cors())
 app.use(morgan('combined'))
 
