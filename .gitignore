@@ -37,5 +37,7 @@ nbproject
 node_modules
 bower_components
 
+store/
 db/
 config.json
+processes.json
