@@ -17,6 +17,7 @@
     "http2": "^3.2.0",
     "leveldown": "^1.4.1",
     "levelup": "^1.2.1",
+    "morgan": "^1.6.1",
     "standard-error": "^1.1.0",
     "underscore": "^1.8.2",
     "url-join": "0.0.1"

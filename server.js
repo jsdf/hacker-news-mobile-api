@@ -3,6 +3,7 @@ var http2 = require('http2')
 var express = require('express')
 var _ = require('underscore')
 var cors = require('cors')
+var morgan = require('morgan')
 
 var Store = require('./store')
 
@@ -10,6 +11,7 @@ var config = require('./config.json')
 
 var app = express()
 app.use(cors())
+app.use(morgan('combined'))
 
 var store = new Store()
 
